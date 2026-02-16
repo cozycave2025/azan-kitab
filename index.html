@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asan Kitab - Quran Roman Urdu</title>
+    <!-- SEO Tags -->
+    <meta name="description"
+        content="Read Quran with Arabic text and Roman Urdu translation. Simple and easy to understand.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ASAN KITAB</h1>
+            <p class="subtitle">Quran with Roman Urdu Translation</p>
+        </header>
+
+        <section class="search-section">
+            <input style="display: none;" type="number" id="chapter-input" placeholder="Chapter No. (1-114)" min="1" max="114">
+            <select id="chapter-select">
+                <option value="" disabled selected>Or Select Surah Name</option>
+                <!-- Options will be populated by JS -->
+            </select>
+            <button id="fetch-btn">Open Surah</button>
+        </section>
+
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p style="margin-top: 10px; color: var(--accent-color);">Loading Sacred Verses...</p>
+        </div>
+
+        <main id="quran-content">
+            <!-- Verses will be displayed here -->
+            <div style="text-align: center; color: var(--text-muted); padding-top: 5rem;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                    stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.2; margin-bottom: 1rem;">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <p>Please select a chapter to begin reading.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
