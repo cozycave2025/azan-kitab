@@ -12,15 +12,11 @@ Asan Kitab ek aisi web application hai jo un logon ke liye banai gayi hai jinhen
 
 ## Kaise Chalayein?
 
-Agar aap isay apne local computer par chalana chahte hain:
+Is app ko chalane ke liye koi server ki zaroorat nahi hai, aap asani se niche diye gaye tareeqon se chala sakte hain:
 
-1. Sab se pehle project folder mein jayein.
-2. Terminal ya Command Prompt kholein.
-3. Niche di gayi command likhein:
-   ```bash
-   npm run dev
-   ```
-4. Phir apne browser mein `http://localhost:3000` khol kar parhna shuru karein.
+1.  **Direct Open**: Project folder mein jayein aur `index.html` file par double-click karein.
+2.  **Copy Path**: `index.html` par right-click karke "Copy Path" karein aur apne browser ke address bar mein paste kar dein.
+3.  **Browser**: App foran khul jayegi aur aap parhna shuru kar sakte hain (Internet zaroori hai kyunke data online API se aata hai).
 
 ## APIs Used:
 - **Arabic**: Quran Uthmani Hafs (fawazahmed0 API)
